@@ -8,7 +8,7 @@ if [ ! -e $CONTAINER_ALREADY_STARTED ]; then
     echo "-- First container startup --"
     # YOUR_JUST_ONCE_LOGIC_HERE
 sleep 60
-expect /var/local/nedi/install.exp $DBUSER $MYSQL_ROOT_PASSWORD
+expect /var/local/nedi/install.exp $SYSUSER $SYSPASS
 sleep 3600
 else
 echo "Already first setup"
